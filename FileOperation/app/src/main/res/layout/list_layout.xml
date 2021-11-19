@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/firstname" />
+
+    <TextView
+        android:id="@+id/tvLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lastname" />
+
+    <TextView
+        android:id="@+id/tvCars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cars" />
+</LinearLayout>

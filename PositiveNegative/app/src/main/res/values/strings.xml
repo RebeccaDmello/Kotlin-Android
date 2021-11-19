@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PostiveNegativeNumbers</string>
+    <string name="lblInput">Enter some numbers</string>
+    <string name="btnCal">Calculate</string>
+    <string name="tvRes">" "</string>
+    <string name="edNum">" "</string>
+</resources>

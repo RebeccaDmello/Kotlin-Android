@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TikTok</string>
+    <string name="lblTitle">Rebecca Tic-Tac-Toe Game</string>
+    <string name="edInput1"> </string>
+    <string name="edInput2"> </string>
+    <string name="edHint1">Input 1 - Player 1</string>
+    <string name="edHint2">Input 2 - Player 2</string>
+    <string name="btnPlay">Go..</string>
+    <string name="tvGame">" "</string>
+    <string name="tvRes">" "</string>
+</resources>

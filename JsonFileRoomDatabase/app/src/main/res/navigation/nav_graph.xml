@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.midterm_300322984.FragmentMain300322984"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_displayFragment"
+            app:destination="@id/displayFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/displayFragment"
+        android:name="com.example.midterm_300322984.FragmentDisplay300322984"
+        android:label="display_fragment"
+        tools:layout="@layout/display_fragment" >
+        <action
+            android:id="@+id/action_displayFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_displayFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.midterm_300322984.FragmentDetail300322984"
+        android:label="detail_fragment"
+        tools:layout="@layout/detail_fragment" >
+<!--        <argument-->
+<!--            android:name="title"-->
+<!--            app:argType="string"-->
+<!--            android:defaultValue="" />-->
+        <argument
+            android:name="jobId"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_detailFragment_to_displayFragment"
+            app:destination="@id/displayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.midterm_300322984.SearchFragment"
+        android:label="search_fragment"
+        tools:layout="@layout/search_fragment" >
+
+        <action
+            android:id="@+id/action_searchFragment_to_searchResultsFragment"
+            app:destination="@id/searchResultsFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.midterm_300322984.FragmentRegistration300322984"
+        android:label="registration_fragment"
+        tools:layout="@layout/registration_fragment" >
+        <action
+            android:id="@+id/action_registrationFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.midterm_300322984.FragmentLogin300322984"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_displayFragment"
+            app:destination="@id/displayFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchResultsFragment"
+        android:name="com.example.midterm_300322984.SearchResultsFragment"
+        android:label="search_results_fragment"
+        tools:layout="@layout/search_results_fragment">
+
+        <argument
+            android:name="searchType"
+            app:argType="integer"
+            android:defaultValue="1"/>
+        <argument
+            android:name="searchValue"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <action
+            android:id="@+id/action_SearchDisplayFragment_to_DetailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+</navigation>

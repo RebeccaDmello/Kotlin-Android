@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FCol</string>
+    <string name="tit">Title</string>
+    <string name="art">Artist</string>
+    <string name="time">Time (In Seconds)</string>
+    <string name="add">ADD</string>
+    <string name="sort_artist">Artist</string>
+    <string name="sort_title">Title</string>
+    <string name="sort_time">Time</string>
+    <string name="lblTitle">Enter Title</string>
+    <string name="lblArt">Enter Artist Name</string>
+    <string name="lblTime">Enter Time</string>
+</resources>
